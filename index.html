@@ -1,0 +1,78 @@
+/*display: flex changes an element to a block-level container with flex items inside of it.
+display: inline-flex allows multiple flex containers to appear inline with each other.
+justify-content is used to space items along the major axis.
+align-items is used to space items along the cross axis.
+flex-grow is used to specify how much space (and in what proportions) flex items absorb along the major axis.
+flex-shrink is used to specify how much flex items shrink and in what proportions along the major axis.
+flex-basis is used to specify the initial size of an element styled with flex-grow and/or flex-shrink.
+flex is used to specify flex-grow, flex-shrink, and flex-basis in one declaration.
+flex-wrap specifies that elements should shift along the cross axis if the flex container is not large enough.
+align-content is used to space rows along the cross axis.
+flex-direction is used to specify the major and cross axes.
+flex-flow is used to specify flex-wrap and flex-direction in one declaration.
+Flex containers can be nested inside of each other by declaring display: flex or display: inline-flex for children of flex containers.*/
+
+<!doctype html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700,400italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <div class="container">
+      <h1>Headlines.</h1>
+      <ul>
+        <li><a href="3">About</a></li>
+        <li><a href="#expertise">Our Services</a></li>
+        <li><a href="3">Our Team</a></li>
+        <li><a href="#footer">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="jumbotron">
+    <div class="container">
+      <h2>We <span>collect and curate</span>
+articles, opinions, and images
+from around the world.</h2>
+    </div>
+  </div>
+  <div class="banner">
+    <div class="container">
+      <h2>The Bottom Line.</h2>
+      <p>We deliver the news that is relevant to you.</p>
+    </div>
+  </div>
+  <div class="container">
+    <h2 id="expertise">Our Expertise.</h2>
+    <div class="main">
+      <div class="spacer">
+        <div class="cards">
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p1.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p6.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p8.jpg">
+          </div>
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p2.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p5.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p7.jpg">
+          </div>
+          <div class="col">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p3.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p4.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p9.jpg">
+            <img src="https://s3.amazonaws.com/codecademy-content/projects/headlines/p10.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <h3>Headlines.</h3>
+    <p>1000 7th Avenue</p>
+    <p>New York, NY</p>
+    <p>(484) 192 - 8372</p>
+  </div>
+</body>
+</html>
